@@ -1,0 +1,74 @@
+.mask{
+    position:absolute;
+    background: #343a40;
+    height: 100%;
+    width:100%;
+}
+
+.logoLoad{
+    height: 100px;
+    width: 100px;
+    background: $orange;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    border-radius: 50%;
+
+    animation: rotateLoading linear 2s infinite;
+}
+.logoLoad:before{
+    content: '';
+    height: 75px;
+    width: 75px;
+    background: #343a40;
+    // background:linear-gradient(#343a40, #1d1e1f);
+    position: absolute;
+    border-radius: 50%;
+    top: 12.5px;
+    left: 12.5px;
+}
+
+.logoLoad:after{
+    content: '';
+    height: 50px;
+    width: 50px;
+    background: #343a40;
+    border-bottom: solid 10px $orange;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+
+
+@keyframes rotateLoading{
+    0% {
+        left: -500px;
+        // transform: rotate(0deg);
+    }
+    100% {
+        // transform: rotate(360deg);
+        left: 2000px;
+    }
+  }
+
+
+
+
+  .logoLoad_img{
+      content: '';
+      background: url("/images/logo.png");
+      background-size: cover;
+      height: 100px;
+      width: 100px;
+      top: 200px;
+      left: 400px;
+      position: absolute;
+  }
+
+  .logoLoad_img:before{
+    content: '';
+    background:linear-gradient( #1d1e1f, #343a40);
+    height: 100px;
+    width: 100px;
+}

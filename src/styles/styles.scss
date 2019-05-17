@@ -1,0 +1,80 @@
+@import './base/settings';
+@import './base/base';
+
+@import './components/cast';
+@import './components/load';
+
+
+.is-active .itemExperience{
+    opacity: 1 !important;
+    filter: grayscale(0%) !important;
+}
+.is-active .itemExperience:hover{
+    // Overwrite hover without active
+   
+}
+
+.itemExperience{
+    background: RGB(255,255,255);
+    opacity: 0.5;
+    width: 310px;
+    filter: grayscale(100%);
+    -webkit-transition:  0.5s; /* Safari */
+    transition:  0.5s;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.itemExperience:hover{
+    opacity: 1;
+    margin-top:0px;
+    filter: grayscale(0%);
+    transform: translate(0,-1rem);
+}
+
+
+
+#experience_content{
+    // -webkit-transition:  1s; /* Safari */
+    // transition:  1s;
+    padding: 20px;
+}
+
+
+
+
+.bg-red{
+    background: $red_d_1;
+}
+
+.bg-darkblue{
+    background: $blue_d_1;
+}
+
+.bg-green{
+    background: $green;
+}
+
+
+.bg-orange{
+    background: $orange;
+}
+
+
+.title-page{
+    min-width: 300px;
+}
+.col_ericsson_box{
+    min-width: 300px;
+    margin-bottom: 10px;
+}
+.subtitle{
+    background: RGBA(255,255,255,0.9);
+    padding-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.nav-link.active{
+    background: #6c757d!important;
+    border: none;
+}
