@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "GNG",
   "license": "MIT",
+  "engines": {
+    "node": "10.15.3"
+  },
   "scripts": {
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
