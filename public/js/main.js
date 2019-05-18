@@ -4,19 +4,19 @@ window.onload = function(){
 }
 
 //Check changes on #experience_content
-$('#experience_content').bind('DOMSubtreeModified', function(e) {
+$("body").on('DOMSubtreeModified', "#experience_content", function() {
+    defineColorExperience()
     hideShowExperinceNav();
 });
 
 
-$('.experienceNav > .nav-link').on('click', function(e){
-    
-    var classes = $(e.target).closest( ".itemExperience" ).attr('class').split(/\s+/);
-    var classBG = classes.map(c => c.indexOf("bg-")?'':c ).join('');
-    $('#experience_content').removeClass();
-    $('#experience_content').addClass(classBG);
-    hideShowExperinceNav();
-});
+// $('.experienceNav > .nav-link').on('click', function(e){
+//     var classes = $(e.target).closest( ".itemExperience" ).attr('class').split(/\s+/);
+//     var classBG = classes.map(c => c.indexOf("bg-")?'':c ).join('');
+//     $('#experience_content').removeClass();
+//     $('#experience_content').addClass(classBG);
+//     hideShowExperinceNav();
+// });
 
 function hideShowExperinceNav(){
   //Check if have content on #experience_content

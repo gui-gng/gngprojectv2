@@ -3,8 +3,8 @@ import React from 'react';
 
 
 const CastPage = () => (
+ 
   <div className="castPage container pt-5 w-100">
-    
     <div className="row justify-content-center subtitle">
       <div className="col-12 align-self-center text-center">
         <p>
