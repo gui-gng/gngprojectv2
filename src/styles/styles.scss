@@ -5,21 +5,14 @@
 @import './components/load';
 
 
-.is-active .itemExperience{
-    opacity: 1 !important;
-    filter: grayscale(0%) !important;
-    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.is-active .itemExperience:hover{
-    // Overwrite hover without active
-   
+#container_content{
+    margin-top: 46px;
 }
 
 .itemExperience{
     background: RGB(255,255,255);
     opacity: 0.5;
     width: 310px;
-    
     filter: grayscale(100%);
     -webkit-transition:  0.5s; /* Safari */
     transition:  0.5s;
@@ -34,7 +27,18 @@
     transform: translate(0,-1rem);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.is-active .itemExperience{
+    opacity: 1 !important;
+    filter: grayscale(0%) !important;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.is-active .itemExperience:hover{
+    // Overwrite hover without active
+    transform: translate(0,0);
+    box-shadow: none;
+    margin: 5px;
 
+}
 
 
 #experience_content{

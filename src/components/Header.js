@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => (
-  <header  className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <header  className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
     <a className="navbar-brand" href="/">
       <img src="/images/logo.png" width="30" height="" alt="" />
